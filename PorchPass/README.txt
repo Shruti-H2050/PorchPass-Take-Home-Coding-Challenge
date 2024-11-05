@@ -86,3 +86,18 @@ For guest access of "https://www.braustin.com/" webapplication there is no login
  and got the information that login and registration access is been given to users after selecting the homes. 
  Hence I was not able to test for this application.
  But I have implemented the code for SignIn and Registration feature for some other website and the same can be seen in the SignIn and Registration files.
+
+
+———————-Any challenges faced and how you overcome——————-
+
+1.Finding the login and registration page for the given web application was a initial challenge. Approached the braustin customer services and got the information that login and registration are applicable after the homes are selected. Thus decided to implement these features for some other web application where login and registration was directly accessible. 
+
+2.Maintaining the same instance of the objects across multiple steps and defining the custom contexts for sharing data between step definition in cucumber was a challenging.
+	Overcome this challenge by using “setWorldConstructor(CustomWorld)” in Hooks, this is typically used in Cucumber to define a custom world, which shares context or environment for tests. This custom world allows to share variables or objects (e.g., browser instances, pages, user data) across different steps of test scenarios.
+
+3.While testing the Home Models Filter section, getting the sectionCount, bedroomCount and bathroomCount from the url was challenging.
+	Overcome this challenge by using page.$$:
+1.Firstly,define the parameter to check 
+2.Used page.$$eval to find all anchor tags and filter based on the parameter
+3.Get the href of each link where page.$$eval maps over the links to get their href
+ filtered the links by creating a url object for each href and checks if the desired parameter equals true and filter based on the parameter.
