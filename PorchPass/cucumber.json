@@ -1,0 +1,18 @@
+{
+  
+    "default": {
+      "formatOptions": {
+        "snippetInterface": "async-await"
+      },
+      "paths": ["tests/features/*.feature" ],
+      "require": ["tests/steps/*.js",
+                "tests/pages/*.js",
+                "tests/hooks/*.js"],
+     
+      "dryrun":false,
+      "parallel": 10,
+      "format": ["html:reports/cucumber-report.html"]
+      
+    }
+  
+}
