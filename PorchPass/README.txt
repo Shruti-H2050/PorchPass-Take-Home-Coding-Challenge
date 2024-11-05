@@ -68,7 +68,7 @@ This is a runner file which executes the tests
 
 8.reports:
 This folder consists of the cucumber report generated for the tests run.
-The report can be seen by downloading cucumber-report.html from github. Below is the screen of repoerts for quick look.
+The report can be seen by downloading cucumber-report.html from github. 
 The report clearly shows the number of tests pass/failed with each test secnario details.
 
 
